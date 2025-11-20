@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Task List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    input,
+    button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px auto;
+      max-width: 400px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .task-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .actions button {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>📋 Task List with Update & Delete</h2>
+  <input type="text" id="itemInput" placeholder="Enter a task">
+  <button onclick="addItem()">Add</button>
+  <ul id="itemList"></ul>
+
+  <script src="./To_DO.js"></script>
+
+
+</body>
+
+</html>
